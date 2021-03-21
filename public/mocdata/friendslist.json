@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "name": "Rahul Gupta",
+            "show": true,
+            "favorite": true
+        },
+        {
+            "name": "Shivangi Sharma",
+            "show": true,
+            "favorite": true
+        },
+        {
+            "name": "Akash singh",
+            "show": true,
+            "favorite": false
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+.friends-container {
+  background: white;
+  width: 30vw;
+  margin: 10em auto;
+  color: white;
+  border: 3px solid lightgrey;
+}
+
+#info-container {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  border-top: 1px solid lightgray;
+  padding: 0.9em;
+  margin: 0.5em;
+}
+
+#friend-info {
+  width: 80%;
+  color: black;
+  display: block;
+}
+
+#action-btn {
+  width: 20%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#info-container button {
+  cursor: pointer;
+  color: white;
+  float: right;
+}
+
+.friends {
+  max-height: 460px;
+  min-height: 390px;
+  overflow-x: auto;
+}
+
+.create-friend input[type=text] {
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 15px 15px 8px 10px;
+}
+
+#page-numbers {
+  list-style: none;
+  display: flex;
+}
+
+#page-numbers>li {
+  margin-right: 0.3em;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
