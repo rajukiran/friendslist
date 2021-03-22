@@ -82,7 +82,7 @@ function FriendsList() {
     }, [])
 
     const addFriend = name => {
-        const newFriends = [...friends, { name, favorite: false }];
+        const newFriends = [...friends, { name, favorite: false, show: true }];
         newFriends.sort((firstValue, secondValue) => firstValue.favorite - secondValue.favorite)
         setTasks(newFriends);
     };
@@ -147,7 +147,7 @@ function FriendsList() {
     const processFriendsListWithFavorite = friends.filter(el => el.show).sort((a, b) => b.favorite - a.favorite);
     const indexOfLastFriend = currentPage * friendsPerPage;
     const indexOfFirstFriend = indexOfLastFriend - friendsPerPage;
-    const currentPageFriends = filterName && filterName.length ? processFriendsListWithFavorite : processFriendsListWithFavorite.slice(indexOfFirstFriend, indexOfLastFriend);
+    const currentPageFriends = (filterName && filterName.length) || indexOfFirstFriend < 0 ? processFriendsListWithFavorite : processFriendsListWithFavorite.slice(indexOfFirstFriend, indexOfLastFriend);
 
     return (
         <div className="friends-container">
