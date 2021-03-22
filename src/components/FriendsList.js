@@ -22,8 +22,8 @@ function Friend({ friendData, index, favoriteTask, removeFriend, display }) {
                         </div>
                     </div>
                     <div id="action-btn">
-                        <button onClick={() => favoriteTask(friendData.name)}><img src={friendData.favorite ? "./favorite-selected.png" : "favorite.png"} alt="Favorite" height="20" width="30" /></button>
-                        <button style={{marginLeft: 10}} onClick={() => removeFriend(friendData.name)}><img src={"./delete.png"} alt="Delete" height="20" width="30" /></button>
+                        <button onClick={() => favoriteTask(friendData.name)} style={{padding: 5}}><img src={friendData.favorite ? "./favorite-selected.png" : "favorite.png"} alt="Favorite" height="20" width="30" /></button>
+                        <button style={{marginLeft: 10, padding: 5}} onClick={() => removeFriend(friendData.name)}><img src={"./delete.png"} alt="Delete" height="20" width="30" /></button>
                     </div>
                 </div>
             ) : null
